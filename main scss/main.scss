@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+
+body {
+  font-family: 'spartan', sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+//Background Images Styling Top and Bottom
+
+.top-img,
+.bottom-img {
+  position: absolute;
+  z-index: -1;
+}
+
+.bottom-img {
+  top: 300px;
+  right: -240px;
+  width: 1300px;
+}
+
+//Section A Styling
+
+#section-a {
+  .proof {
+    //10,000+ of our..... styling
+
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    grid-gap: 30%;
+    padding-top: 8%;
+    align-items: center;
+
+    .users-love {
+      color: hsl(333, 43%, 22%);
+      .title {
+        font-size: 40px;
+        font-weight: bold;
+      }
+      p {
+        line-height: 1.7;
+      }
+    }
+
+    //Reviews
+
+    .stars {
+      display: flex;
+      align-items: center;
+      color: hsl(333, 43%, 22%);
+      background: hsl(300, 24%, 96%);
+      padding: 8px;
+      border-radius: 5px;
+      width: 500px;
+
+      p {
+        margin-left: 20px;
+      }
+      img {
+        padding-right: 7px;
+      }
+      .first {
+        padding-left: 40px;
+      }
+    }
+
+    .item-2 {
+      margin-top: 20px;
+      margin-left: 40px;
+    }
+    .item-3 {
+      margin-top: 20px;
+      margin-left: 80px;
+    }
+  }
+}
+
+//Section B Styling
+
+#section-b {
+  padding-top: 5%;
+  .customer-feedback {
+    display: flex;
+    .img-txt {
+      display: flex;
+      align-items: center;
+      img {
+        border-radius: 50%;
+        margin-right: 20px;
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    //Customer Feedback Styling
+
+    .feedback {
+      background: hsl(300, 43%, 22%);
+      color: #fff;
+      padding: 40px;
+      margin-right: 20px;
+      border-radius: 10px;
+      p {
+        line-height: 1.7;
+      }
+    }
+    .feed-2 {
+      position: relative;
+      top: 30px;
+    }
+    .feed-3 {
+      position: relative;
+      top: 70px;
+    }
+    h3 {
+      line-height: 1.5;
+      span {
+        color: hsl(333, 80%, 67%);
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+//Mobile Scss
+
+@import 'mobile';
